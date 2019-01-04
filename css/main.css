@@ -1,0 +1,182 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s linear; }
+  header nav {
+    display: none; }
+    header nav ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      header nav ul li {
+        margin-bottom: 10px; }
+      header nav ul a {
+        color: white;
+        font-size: 16px; }
+      header nav ul a:hover {
+        color: black; }
+  header span {
+    background-image: url("../img/burgerMenu.png");
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    text-indent: 9999px;
+    margin-right: 15px; }
+  header #logo {
+    width: 130px;
+    display: inline-block; }
+    header #logo img {
+      width: 100%; }
+
+.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff9800;
+  display: block; }
+
+.small {
+  height: 60px;
+  background-color: #ff9800; }
+  .small #logo {
+    width: 100px; }
+  .small span {
+    background-size: 30px;
+    width: 30px;
+    height: 30px; }
+
+h1 {
+  font-size: 30px; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.container section {
+  padding-top: 80px; }
+
+.mealHide {
+  display: none; }
+
+.img-res {
+  width: 100%;
+  height: auto; }
+
+.buttonWraper {
+  display: flex;
+  justify-content: center; }
+
+a.button {
+  border: 2px solid black;
+  color: black;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 3px 10px;
+  text-align: center;
+  text-transform: uppercase; }
+
+a.button:hover {
+  background-color: #ff9800; }
+
+#home {
+  background-image: url("../img/introBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  #home .introMessage {
+    width: 100%; }
+    #home .introMessage h1 {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+    #home .introMessage .introButtons {
+      display: flex;
+      justify-content: center; }
+      #home .introMessage .introButtons a {
+        color: white;
+        border: 2px solid white; }
+      #home .introMessage .introButtons a:nth-child(1) {
+        margin-right: 20px; }
+
+#ourMenu #menuList {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 50%;
+  margin: auto;
+  position: relative;
+  text-indent: 0;
+  margin-bottom: 30px; }
+  #ourMenu #menuList li {
+    margin-right: 10px;
+    text-indent: 0;
+    border-top: 0;
+    border-bottom: 0;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer !important; }
+  #ourMenu #menuList li:last-child {
+    margin-right: 0; }
+
+.galleryItem {
+  margin-bottom: 30px; }
+
+#Reservation form {
+  background-color: #ff9800;
+  min-height: 250px; }
+  #Reservation form h2 {
+    padding-top: 15px; }
+
+#Reservation input.button {
+  background-color: #ff9800;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase; }
+
+#Reservation input.button:hover {
+  background-color: #ff9800;
+  border: 2px solid black;
+  color: black; }
+
+.formWrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: center; }
+
+.formItems {
+  margin-bottom: 15px; }
+
+.formItems:nth-child(odd) {
+  margin-right: 15px; }

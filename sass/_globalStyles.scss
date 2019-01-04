@@ -1,0 +1,45 @@
+h1{
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+     margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container section{
+    padding-top: 80px;
+}
+.mealHide{
+    display: none;
+}
+.img-res{
+    width: 100%;
+    height: auto;
+}
+.buttonWraper {
+    display: flex;
+    justify-content: center;
+}
+a.button{
+    border: 2px solid black;
+    color: black;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+a.button:hover {
+    background-color: #ff9800;
+}

@@ -1,0 +1,26 @@
+#ourMenu{
+    #menuList{
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 50%;
+        margin: auto;
+        position: relative;
+        text-indent: 0;
+        margin-bottom: 30px;
+        li{
+            margin-right: 10px;
+            text-indent: 0;
+            border-top: 0;
+            border-bottom: 0;
+            height: 30px;
+            background-color: rgba($color: #000000, $alpha: 0);
+            cursor: pointer!important;
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+    }
+
+}

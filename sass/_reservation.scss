@@ -1,0 +1,32 @@
+#Reservation{
+    form{
+        background-color: #ff9800;
+        min-height: 250px;
+        h2{
+            padding-top: 15px;
+        }
+    }
+    input.button{
+        background-color: #ff9800;
+        border: 2px solid white;
+        color: white;
+        text-transform: uppercase;
+    }
+    input.button:hover {
+        background-color: #ff9800;
+        border: 2px solid black;
+        color: black;
+    }
+}
+.formWrapper{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.formItems{
+    margin-bottom: 15px;
+}
+.formItems:nth-child(odd){
+    margin-right: 15px;
+}
