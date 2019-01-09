@@ -47,9 +47,11 @@ $(window).on("scroll", function () {
   fromTop = $(this).scrollTop();
   if (fromTop > 200) {
       $("header").addClass("small");
+      $("header nav").css({ "height": "60px" });
     // menuBtn.css({"top" : "5px"})
   }else {
       $("header").removeClass("small");
+      $("header nav").css({ "height": "80px" });
     // menuBtn.css({"top" : "30px"})
   }
 });
