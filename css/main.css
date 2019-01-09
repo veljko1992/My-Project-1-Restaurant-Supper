@@ -115,6 +115,19 @@ a.button {
 a.button:hover {
   background-color: #ff9800; }
 
+::placeholder {
+  color: #ff9800;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ff9800; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ff9800; }
+
 #home {
   background-image: url("../img/introBackground.jpg");
   background-position: center;
@@ -204,7 +217,8 @@ a.button:hover {
 
 footer {
   padding: 15px;
-  background-color: #ff9800; }
+  background-color: #ff9800;
+  margin-top: 30px; }
   footer img {
     width: 150px; }
   footer small {
