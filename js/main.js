@@ -1,7 +1,15 @@
 //Navigacija
 var nav = $("nav");
 var menuBtn = $("#menu-btn");
-var winWidth;
+var winWidth = $(window).width();
+
+if (winWidth >= 992) {
+    nav.css("display", "block");
+    menuBtn.css("display", "none");
+} else {
+    nav.css("display", "none");
+    menuBtn.css("display", "block");
+}
 
 $(window).resize(function () {
     winWidth = $(window).width();
