@@ -1,0 +1,26 @@
+.aboutUs{
+    background-image: url('../img/food1.jpg');
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    .container{
+        background-color: #ff9800;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h2{
+            margin-bottom: 50px;
+        }
+        p{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        a {
+            color: white;
+            border-color: white;
+        }
+        a:hover{
+             color: black;
+             border-color: black;
+        }
+    }
+}

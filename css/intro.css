@@ -1,0 +1,27 @@
+#intro {
+  background-image: url("../img/introBackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  #intro .introMessage {
+    width: 100%; }
+    #intro .introMessage h1 {
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+    #intro .introMessage .introButtons {
+      display: flex;
+      justify-content: center; }
+      #intro .introMessage .introButtons a {
+        color: white;
+        border: 2px solid white;
+        margin-top: 0px; }
+      #intro .introMessage .introButtons a:nth-child(1) {
+        margin-right: 20px; }

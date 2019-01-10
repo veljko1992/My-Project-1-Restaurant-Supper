@@ -1,9 +1,18 @@
 #Reservation{
+      background-image: url('../img/food1.jpg');
+          padding-top: 80px;
+          padding-bottom: 80px;
     form{
         background-color: #ff9800;
         min-height: 250px;
+        max-width: 800px;
+        margin: 0 auto;
         h2{
-            padding-top: 15px;
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+        input{
+            text-align: center;
         }
     }
     input.button{
