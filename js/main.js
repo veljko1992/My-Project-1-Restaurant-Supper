@@ -53,14 +53,10 @@ var fromTop;
 
 $(window).on("scroll", function () {
   fromTop = $(this).scrollTop();
-  if (fromTop > 200) {
+    if (fromTop > 200) {
       $("header").addClass("small");
-      $("header nav").css({ "height": "60px" });
-    // menuBtn.css({"top" : "5px"})
-  }else {
+    } else{
       $("header").removeClass("small");
-      $("header nav").css({ "height": "80px" });
-    // menuBtn.css({"top" : "30px"})
   }
 });
 //Skupljanje hedera na scrool END
@@ -101,3 +97,19 @@ function itemsNum() {
 itemsNum();
 $(window).on("resize", itemsNum);
 // Load more Gallery items END
+
+//Pushing a curent date in input date for reservation
+$(document).ready(function () {
+    var date = new Date();
+
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    var today = year + "-" + month + "-" + day;
+    $("#theDate").attr("value", today);
+});
+//Pushing a curent date in input date for reservation END
