@@ -28,9 +28,6 @@ ul{
 .container section{
     padding-top: 80px;
 }
-.mealHide{
-    display: none;
-}
 .img-res{
     width: 100%;
     height: auto;
@@ -78,4 +75,27 @@ h2 + span{
     display: block;
     text-align: center;
     margin-bottom: 50px;
+}
+@media only screen and (min-width: 576px) {
+    p, a, li{
+     font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+       h1 {
+           font-size: 50px;
+       }
+}
+
+@media only screen and (min-width: 1200px) {
+           h1 {
+               font-size: 60px;
+           }
 }

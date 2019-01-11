@@ -34,8 +34,9 @@ header {
     text-indent: 9999px;
     margin-right: 15px; }
   header #logo {
-    width: 130px;
-    display: inline-block; }
+    width: 60px;
+    display: inline-block;
+    margin-left: 15px; }
     header #logo img {
       width: 100%; }
 
@@ -52,7 +53,7 @@ header {
   height: 60px;
   background-color: #ff9800; }
   .small #logo {
-    width: 100px; }
+    width: 40px; }
   .small span {
     background-size: 30px;
     width: 30px;
@@ -69,7 +70,12 @@ header {
     align-items: center; }
     header nav ul li {
       margin-right: 20px;
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  header #logo {
+    width: 100px;
+    padding: 15px; }
+  .small #logo {
+    width: 80px; } }
 
 h1, h2 {
   font-family: 'Roboto', sans-serif; }
@@ -97,9 +103,6 @@ ul {
 
 .container section {
   padding-top: 80px; }
-
-.mealHide {
-  display: none; }
 
 .img-res {
   width: 100%;
@@ -146,6 +149,22 @@ h2 + span {
   text-align: center;
   margin-bottom: 50px; }
 
+@media only screen and (min-width: 576px) {
+  p, a, li {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px; } }
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 50px; } }
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 60px; } }
+
 #intro {
   background-image: url("../img/introBackground.jpg");
   background-position: center;
@@ -179,7 +198,7 @@ h2 + span {
   justify-content: center;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  width: 50%;
+  width: 70%;
   margin: auto;
   position: relative;
   text-indent: 0;
@@ -199,6 +218,13 @@ h2 + span {
   color: #ff9800;
   display: block;
   text-align: center; }
+
+#ourMenu .mealHide {
+  display: none; }
+
+@media only screen and (min-width: 576px) {
+  #ourMenu .mealHide {
+    display: block; } }
 
 .galleryItem {
   margin-bottom: 30px; }
@@ -249,17 +275,22 @@ footer {
   padding: 15px;
   background-color: #ff9800;
   margin-top: 30px; }
-  footer img {
-    width: 150px; }
   footer small {
     text-align: center;
     display: block;
     padding-top: 15px; }
   footer ul:nth-of-type(1) li:first-child {
-    text-align: center; }
+    text-align: center;
+    width: 80px;
+    margin-bottom: 15px; }
   footer ul:nth-of-type(2) li:first-child {
     margin-bottom: 15px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 18px; }
+
+@media only screen and (min-width: 992px) {
+  footer ul:nth-of-type(2) li:first-child {
+    font-size: 20px; } }
 
 .aboutUs {
   background-image: url("../img/food1.jpg");

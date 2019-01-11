@@ -4,7 +4,7 @@
         justify-content: center;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        width: 50%;
+        width: 70%;
         margin: auto;
         position: relative;
         text-indent: 0;
@@ -27,4 +27,20 @@
             display: block;
             text-align: center;
     }
+    .mealHide {
+        display: none;
+    }
 }
+@media only screen and (min-width: 576px) {
+    #ourMenu{
+    .mealHide {
+        display: block;
+    }
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
