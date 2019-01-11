@@ -219,9 +219,6 @@ h2 + span {
   display: block;
   text-align: center; }
 
-#ourMenu .mealHide {
-  display: none; }
-
 @media only screen and (min-width: 576px) {
   #ourMenu .mealHide {
     display: block; } }
