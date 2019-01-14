@@ -172,10 +172,8 @@ h2 + span {
   background-attachment: fixed;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  position: relative; }
+  align-items: center; }
   #intro .introMessage {
     width: 100%; }
     #intro .introMessage h1 {
@@ -201,7 +199,6 @@ h2 + span {
   width: 70%;
   margin: auto;
   position: relative;
-  text-indent: 0;
   margin-bottom: 30px; }
   #ourMenu #menuList li {
     margin-right: 10px;
@@ -209,8 +206,7 @@ h2 + span {
     border-top: 0;
     border-bottom: 0;
     height: 30px;
-    background-color: rgba(0, 0, 0, 0);
-    cursor: pointer !important; }
+    cursor: pointer; }
   #ourMenu #menuList li:last-child {
     margin-right: 0; }
 

@@ -36,7 +36,7 @@ nav.on("click", function () {
 //Navigacija END
 
 // Smooth scrool
-$("nav .navigation-link, .button").on("click", function (e) {
+$("nav .navigation-link,.introButtons .button").on("click", function (e) {
     e.preventDefault();
     sectionID = $(this).attr("href");
     // console.log(sectionID);

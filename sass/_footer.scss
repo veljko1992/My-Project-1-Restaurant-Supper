@@ -1,6 +1,8 @@
+@import '_variables';
+
 footer{
     padding: 15px;
-    background-color: #ff9800;
+    background-color: $orange-color;
     margin-top: 30px;
     small{
         text-align: center;

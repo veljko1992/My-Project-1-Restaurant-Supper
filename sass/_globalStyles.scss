@@ -1,3 +1,5 @@
+@import '_variables';
+
 h1, h2{
     font-family: 'Roboto',
     sans-serif;
@@ -47,29 +49,29 @@ a.button{
     text-transform: uppercase;
 }
 a.button:hover {
-    background-color: #ff9800;
+    background-color: $orange-color;
 }
 ::placeholder {
-    color: #ff9800;
+    color: $orange-color;
     opacity: 1;
     /* Firefox */
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #ff9800;
+    color: $orange-color;
 }
 
 ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #ff9800;
+    color: $orange-color;
 }
 span{
     font-family: 'Charm',
     cursive;
 }
 h2 + span{
-    color: #ff9800;
+    color: $orange-color;
     font-style: italic;
     font-size: 14px;
     display: block;

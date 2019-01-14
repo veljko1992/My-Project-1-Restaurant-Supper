@@ -1,3 +1,4 @@
+@import '_variables';
 #ourMenu {
     #menuList {
         display: flex;
@@ -7,7 +8,7 @@
         width: 70%;
         margin: auto;
         position: relative;
-        text-indent: 0;
+        // text-indent: 0;
         margin-bottom: 30px;
 
         li {
@@ -16,15 +17,14 @@
             border-top: 0;
             border-bottom: 0;
             height: 30px;
-            background-color: rgba($color: #000000, $alpha: 0);
-            cursor: pointer !important;
+            cursor: pointer;
         }
         li:last-child {
             margin-right: 0;
         }
     }
     .card span {
-        color: #ff9800;
+        color: $orange-color;
         display: block;
         text-align: center;
     }
