@@ -1,5 +1,10 @@
-#upcomingEvents{
+@import '_variables';
 
+#upcomingEvents{
+    a{
+        display: block;
+        margin-top: 15px;
+    }
 }
 .eventItem{
     margin-bottom: 30px;
@@ -7,5 +12,8 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 10px;
+    }
+    a:hover{
+        color: $orange-color;
     }
 }

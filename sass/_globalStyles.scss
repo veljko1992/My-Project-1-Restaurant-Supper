@@ -88,16 +88,25 @@ h2 + span{
     h1{
         font-size: 40px;
     }
+    h2 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
        h1 {
            font-size: 50px;
        }
+       h2 {
+           font-size: 40px;
+       }
 }
 
 @media only screen and (min-width: 1200px) {
            h1 {
                font-size: 60px;
+           }
+           h2{
+                font-size: 50px;
            }
 }

@@ -155,15 +155,21 @@ h2 + span {
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  h2 {
+    font-size: 30px; } }
 
 @media only screen and (min-width: 992px) {
   h1 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  h2 {
+    font-size: 40px; } }
 
 @media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 60px; } }
+    font-size: 60px; }
+  h2 {
+    font-size: 50px; } }
 
 #intro {
   background-image: url("../img/introBackground.jpg");
@@ -179,7 +185,9 @@ h2 + span {
     #intro .introMessage h1 {
       text-align: center;
       color: white;
-      text-transform: uppercase;
+      text-transform: uppercase; }
+    #intro .introMessage h2 {
+      color: white;
       margin-bottom: 30px; }
     #intro .introMessage .introButtons {
       display: flex;
@@ -220,7 +228,11 @@ h2 + span {
     display: block; } }
 
 .galleryItem {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  transition: all 0.3s; }
+
+.galleryItem:hover {
+  transform: scale(1.1); }
 
 #Reservation {
   background-image: url("../img/food1.jpg");
@@ -257,12 +269,18 @@ h2 + span {
 .formItems:nth-child(odd) {
   margin-right: 15px; }
 
+#upcomingEvents a {
+  display: block;
+  margin-top: 15px; }
+
 .eventItem {
   margin-bottom: 30px; }
   .eventItem ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px; }
+  .eventItem a:hover {
+    color: #ff9800; }
 
 footer {
   padding: 15px;
