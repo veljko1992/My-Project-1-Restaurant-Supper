@@ -1,4 +1,4 @@
-//Navigacija
+//Navigation
 var nav = $("nav");
 var menuBtn = $("#menu-btn");
 var winWidth = $(window).width();
@@ -28,12 +28,12 @@ menuBtn.on("click", function () {
 });
 nav.on("click", function () {
     if (winWidth < 992 || $(this).attr("class") == "open") {
-        $(this).fadeOut(400, function(){
+        $(this).fadeOut(400, function () {
             $(this).removeClass("open");
         });
     }
 });
-//Navigacija END
+//Navigation END
 
 // Smooth scrool
 $("nav .navigation-link,.introButtons .button").on("click", function (e) {
@@ -43,23 +43,23 @@ $("nav .navigation-link,.introButtons .button").on("click", function (e) {
     sectionPosition = $(sectionID).offset().top;
     // console.log(sectionPosition);
     $("html, body").animate({
-      scrollTop : sectionPosition
+        scrollTop: sectionPosition
     }, 1000);
-} );
+});
 // Smooth scrool END
 
-//Skupljanje hedera na scrool
+//Shrink hedera on scrool
 var fromTop;
 
 $(window).on("scroll", function () {
-  fromTop = $(this).scrollTop();
+    fromTop = $(this).scrollTop();
     if (fromTop > 200) {
-      $("header").addClass("small");
-    } else{
-      $("header").removeClass("small");
-  }
+        $("header").addClass("small");
+    } else {
+        $("header").removeClass("small");
+    }
 });
-//Skupljanje hedera na scrool END
+//Shrink hedera on scrool END
 
 // Load more Gallery items
 var winWidth;
@@ -98,7 +98,7 @@ itemsNum();
 $(window).on("resize", itemsNum);
 // Load more Gallery items END
 
-//Pushing a curent date in input date for reservation
+//Pushing a curent date in to input date for reservation
 $(document).ready(function () {
     var date = new Date();
 
@@ -112,24 +112,62 @@ $(document).ready(function () {
     var today = year + "-" + month + "-" + day;
     $("#theDate").attr("value", today);
 });
-//Pushing a curent date in input date for reservation END
+//Pushing a curent date in to input date for reservation END
 
 //Gallery zoom
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function (item) {
-                return item.el.attr('title') + '<small>by Veljko Ivanovic</small>';
-            }
+$('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        titleSrc: function (item) {
+            return item.el.attr('title') + '<small>by Veljko Ivanovic</small>';
         }
-    });
+    }
+});
 //Gallery zoom END
+
+//Template, append Gallery items
+var $popupGallery = $('.popup-gallery');
+
+$.getJSON("../json/galleryImgs.json", function (result) {
+    var galleryImgs = result;
+    for (i = 0; i < galleryImgs.length; i++) {
+        $popupGallery.append(`<div class="galleryItem col-12 col-sm-6 col-lg-4">
+                        <a href="img/gallery1.jpg" title="Events"><img src="img/${galleryImgs[i].name}" alt="RestaurantImg" class="img-res"></a>
+                        </div>`);
+    }
+});
+//Template, append Gallery items END
+
+//Template, append Events items
+var $eventsHolder = $('.eventsHolder');
+
+$.getJSON("../json/events.json", function (result) {
+    var events = result;
+    for (i = 0; i < events.length; i++) {
+        $eventsHolder.append(`<div class="eventItem col-12 col-md-4">
+                                <a href ="#"><img src ="img/${events[i].name}"
+                                alt = ""
+                                class="img-res" ></a>
+                                <h3>Some dummy event</h3>
+                                <ul>
+                            <li>${events[i].date}</li>
+                            <li>${events[i].time}</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloremque a quas illo earum
+                            culpa cum
+                            dicta unde dolor autem.
+                            <a href="#">Read more...</a>
+                        </p>
+                    </div>`);
+    }
+});
+//Template, append Events items END
