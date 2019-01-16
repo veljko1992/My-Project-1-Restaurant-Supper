@@ -138,7 +138,7 @@ $('.popup-gallery').magnificPopup({
 //Template, append Gallery items
 var $popupGallery = $('.popup-gallery');
 
-    $.getJSON("My-Project-1-Restaurant-Supper/json/galleryImgs.json", function (result) {
+    $.getJSON("json/galleryImgs.json", function (result) {
     var galleryImgs = result;
     for (i = 0; i < galleryImgs.length; i++) {
         $popupGallery.append(`<div class="galleryItem col-12 col-sm-6 col-lg-4">
@@ -151,7 +151,7 @@ var $popupGallery = $('.popup-gallery');
 //Template, append Events items
 var $eventsHolder = $('.eventsHolder');
 
-    $.getJSON("My-Project-1-Restaurant-Supper/json/events.json", function (result) {
+    $.getJSON("json/events.json", function (result) {
     var events = result;
     for (i = 0; i < events.length; i++) {
         $eventsHolder.append(`<div class="eventItem col-12 col-md-4">
