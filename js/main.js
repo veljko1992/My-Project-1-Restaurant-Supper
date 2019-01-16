@@ -1,3 +1,4 @@
+$(document).ready(function () {
 //Navigation
 var nav = $("nav");
 var menuBtn = $("#menu-btn");
@@ -171,3 +172,4 @@ $.getJSON("../json/events.json", function (result) {
     }
 });
 //Template, append Events items END
+});
