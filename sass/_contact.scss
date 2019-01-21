@@ -1,0 +1,34 @@
+@import '_variables';
+
+#contact{
+    padding-top: 100px;
+    .contactInfo{
+        padding: 0 15px;
+    }
+    .conItem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        p:first-child{
+            border: 2px solid $orange-color;
+            color: $orange-color;
+            border-radius: 50%;
+            font-size: 30px;
+            line-height: 86px;
+            width: 90px;
+            height: 90px;
+            margin-bottom: 30px;
+        }
+        p:nth-child(2){
+            width: 100%;
+            min-height: 48px;
+        }
+    }
+    input.button{
+        padding: 3px 10px;
+    }
+    .contact-form{
+        margin-top: 50px;
+    }
+}
